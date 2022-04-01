@@ -3,7 +3,7 @@
 import telebot  # pyTelegramBotAPI	4.3.1
 from telebot import types
 
-bot = telebot.TeleBot('5149965447:AAF3z_oB2sM6Cch1scdWe5AV_aAV3bWmXiA1')  # Создаем экземпляр бота
+bot = telebot.TeleBot('5246247569:AAG6njKqX8QDcjlkmDUsXqiTgj7v4I0530k')  # Создаем экземпляр бота
 
 # -----------------------------------------------------------------------
 # Функция, обрабатывающая команду /start
@@ -58,11 +58,11 @@ def get_text_messages(message):
         bot.send_message(chat_id, text="еще не готово...")
 
     elif ms_text == "Помощь" or ms_text == "/help":  # .................................................................
-        bot.send_message(chat_id, "Автор: Швец Андрей")
+        bot.send_message(chat_id, "Автор: Тетерина Полина")
         key1 = types.InlineKeyboardMarkup()
-        btn1 = types.InlineKeyboardButton(text="Напишите автору", url="https://t.me/user59387")
+        btn1 = types.InlineKeyboardButton(text="Напишите автору", url="https://t.me/@pixie_po")
         key1.add(btn1)
-        img = open('Швец Андрей.png', 'rb')
+        img = open('полина.jpg', 'rb')
         bot.send_photo(message.chat.id, img, reply_markup=key1)
 
     else:  # ...........................................................................................................
